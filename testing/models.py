@@ -16,3 +16,5 @@ class Meta:
     db_table = 'testing_posts'
     verbose_name = 'Blog Post'
     verbose_name_plural = 'Blog Posts'
+    unique_together = (('title', 'user_email'),)
+    index_together = [['title', 'user_email'], ]
