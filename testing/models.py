@@ -8,3 +8,11 @@ class Post(models.Model):
     likes = models.IntegerField()
     user_email = models.EmailField()
 
+    def __str__(self):
+        return self.title
+
+class Meta:
+    ordering = ['created_at']
+    db_table = 'testing_posts'
+    verbose_name = 'Blog Post'
+    verbose_name_plural = 'Blog Posts'
