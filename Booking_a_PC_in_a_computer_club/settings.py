@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-8r+668_@n4+oq+0$ba-fl)^^absv=s64=a7iv(eb&8xm=jkq+0
 DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
-INSTALLED_APPS = [  ]
 
 
 # Application definition
@@ -38,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bookingPC',
 ]
 
 MIDDLEWARE = [
